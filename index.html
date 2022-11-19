@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Consultar CEP</title>
-  </head>
-  <body>
-    <div id="app">
-      <header>
-        <h1>Consultar CEP </h1>
-      </header>
-      <main>
-        <form id="consultarCep">
-          <label >
-            <input name="Cep"   type="number"  maxlength="8" />
-          </label>
-          <button id="btnConsultarCep">Consultar </button>
-        </form>
-        <br>
-        <div id="dados">
 
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultar CEP</title>
+</head>
+
+<body>
+
+  <main class="container">
+    <article>
+      <header>
+        <h1>Consultar CEP</h1>
+      </header>
+      <section class="grid">
+        <form id="consultarCep">
+          <label for=""> Cep
+            <input  placeholder="Digite o CEP" name="cep" type="text" maxlength="8" >
+          </label> 
+          <button id="btnConsultarCep">Consultar</button>
+        </form>
+        <div id="dados">
+      
         </div>
-      </main>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+      </section>
+
+    </article>
+
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
